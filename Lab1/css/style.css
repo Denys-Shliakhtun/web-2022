@@ -1,0 +1,108 @@
+body { 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: grid;
+    grid-template-areas: 
+      "header header header"
+      "nav bar bar"
+      "nav article panel"
+      "footer footer footer";
+    grid-template-rows: 20% 60px 1fr 60px;
+    grid-template-columns: 20% 1fr 150px;
+    grid-gap: 10px;
+    height: 100vh;
+    margin: 10px;
+    background: #E4C5AF;
+    
+    }
+
+header, footer, article, nav, div {
+    padding: 2vh 1.2vw;
+    background: #9ECE9A;
+    border-radius: 10px;
+    }
+
+#pageHeader {
+    grid-area: header;
+    }
+
+#pageHeader h1 {
+    line-height: 0;
+    margin: 3.3% 1%;
+    display: block;
+    /*padding: 10px 0 10px 0;*/ 
+    font-size: 40px;
+    }
+
+#pageFooter {
+    grid-area: footer;
+    }
+
+#pageFooter h2 {
+    line-height: 0;
+    font-size: 30px;
+    text-align: right;
+    margin: 20px 0;
+    }
+
+#mainArticle { 
+    grid-area: article;      
+    }
+
+#mainArticle img {
+        max-width: 20vw;
+        float: left;
+        margin: 10px;
+    }
+
+#mainArticle img.right {
+        float: right;
+    }
+
+#mainArticle p {
+    text-align:justify;
+}
+
+#mainArticle li{
+    position: relative;
+    left: 19px;
+}
+
+ol {padding: 0px;}
+
+#mainNav { 
+    grid-area: nav; 
+    }
+
+#mainNav ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    } 
+
+#mainNav li {
+    text-align: center;
+    background-color: #077187;
+    border-radius: 10px;
+    padding: 10px 5px 10px 5px;
+    margin: 10px;
+    }
+
+#mainNav li:hover {
+        background-color: #074F57;
+    }
+
+#mainNav a {
+    color: #9ECE9A;    
+    }
+
+#pageBar { 
+    grid-area: bar; 
+    }
+
+#pageBar marquee {
+        margin: 7px;
+    }
+
+#pageRightPanel {
+    grid-area: panel;
+    }
