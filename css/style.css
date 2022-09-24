@@ -27,7 +27,7 @@ header, footer, article, nav, div {
 
 #pageHeader h1 {
     line-height: 0;
-    margin: 3.3% 1%;
+    margin: 7vh 1%;
     display: block;
     /*padding: 10px 0 10px 0;*/ 
     font-size: 40px;
@@ -41,7 +41,7 @@ header, footer, article, nav, div {
     line-height: 0;
     font-size: 30px;
     text-align: right;
-    margin: 20px 0;
+    margin: 17px 0;
     }
 
 #mainArticle { 
@@ -100,7 +100,7 @@ ol {padding: 0px;}
     }
 
 #pageBar marquee {
-        margin: 7px;
+        margin: 5px 0;
     }
 
 #pageRightPanel {
