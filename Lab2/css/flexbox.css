@@ -1,28 +1,23 @@
 body { 
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    display: grid;
-    grid-template-areas: 
-      "header header header"
-      "nav bar bar"
-      "nav article panel"
-      "footer footer footer";
-    grid-template-rows: 20% 60px 1fr 60px;
-    grid-template-columns: 20% 1fr 150px;
-    grid-gap: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
     height: 100vh;
-    margin: 10px;
+    margin: 0.3%;
     background: #E4C5AF;
     
     }
 
 header, footer, article, nav, div {
+    margin: 0.3%;
     padding: 2vh 1.2vw;
     background: #9ECE9A;
     border-radius: 10px;
     }
 
 #pageHeader {
-    grid-area: header;
+    width: 100%;
     }
 
 #pageHeader h1 {
@@ -34,7 +29,7 @@ header, footer, article, nav, div {
     }
 
 #pageFooter {
-    grid-area: footer;
+    width: 100%;
     }
 
 #pageFooter h2 {
@@ -45,7 +40,9 @@ header, footer, article, nav, div {
     }
 
 #mainArticle { 
-    grid-area: article;      
+    /*
+    flex-basis: 60%;
+    flex-grow: 2;*/     
     }
 
 #mainArticle img {
@@ -70,7 +67,7 @@ header, footer, article, nav, div {
 ol {padding: 0px;}
 
 #mainNav { 
-    grid-area: nav; 
+    flex-basis: 30%;
     }
 
 #mainNav ul{
@@ -96,7 +93,7 @@ ol {padding: 0px;}
     }
 
 #pageBar { 
-    grid-area: bar; 
+    width: auto;
     }
 
 #pageBar marquee {
@@ -104,5 +101,34 @@ ol {padding: 0px;}
     }
 
 #pageRightPanel {
-    grid-area: panel;
+    flex-basis: 150px;
+    /*flex-grow: 1; */
     }
+
+div.mainContainer
+{
+    margin:0;
+    padding:0;
+    display: flex;
+    width: 100%;
+    background: #E4C5AF;
+}
+
+div.innerContainer
+{
+    flex-grow: 4;
+    flex-direction: column;
+    margin:0;
+    padding:0;
+    display: flex;
+    background: #E4C5AF;
+}
+
+div.innerInnerContainer
+{
+    flex-direction: row;
+    margin:0;
+    padding:0;
+    display: flex;
+    background: #E4C5AF;
+}

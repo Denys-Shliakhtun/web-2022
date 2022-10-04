@@ -1,28 +1,36 @@
 body { 
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    display: grid;
-    grid-template-areas: 
-      "header header header"
-      "nav bar bar"
-      "nav article panel"
-      "footer footer footer";
-    grid-template-rows: 20% 60px 1fr 60px;
-    grid-template-columns: 20% 1fr 150px;
-    grid-gap: 10px;
+    display: block;
     height: 100vh;
-    margin: 10px;
+    margin: 0.6vh 0.2vw;
     background: #E4C5AF;
     
     }
 
 header, footer, article, nav, div {
+    margin: 0.6vh 0.2vw ;
     padding: 2vh 1.2vw;
     background: #9ECE9A;
     border-radius: 10px;
+    display: block;
+    float: left;
+    }
+
+    div.centralBlock {
+        background: #E4C5AF;
+        margin: 0;
+        padding: 0;
+        /*
+        width: 100%;
+        min-height: 70vh;
+        overflow: hidden;
+        position: relative;
+        */
     }
 
 #pageHeader {
-    grid-area: header;
+    width: 97.2%;
+    height: 20vh;
     }
 
 #pageHeader h1 {
@@ -34,7 +42,8 @@ header, footer, article, nav, div {
     }
 
 #pageFooter {
-    grid-area: footer;
+    width: 97.2%;
+    height: 60px;
     }
 
 #pageFooter h2 {
@@ -45,7 +54,8 @@ header, footer, article, nav, div {
     }
 
 #mainArticle { 
-    grid-area: article;      
+    height: 100%;
+    width: 55vw;      
     }
 
 #mainArticle img {
@@ -70,7 +80,10 @@ header, footer, article, nav, div {
 ol {padding: 0px;}
 
 #mainNav { 
-    grid-area: nav; 
+    height: 117vh;
+    width: 20vw; 
+    /*display: inline-block;*/
+    
     }
 
 #mainNav ul{
@@ -96,7 +109,8 @@ ol {padding: 0px;}
     }
 
 #pageBar { 
-    grid-area: bar; 
+    width: 72.9vw;
+    height: 60px; 
     }
 
 #pageBar marquee {
@@ -104,5 +118,7 @@ ol {padding: 0px;}
     }
 
 #pageRightPanel {
-    grid-area: panel;
+    
+    height: 103.7vh;
+    width: 14.9vw;
     }
